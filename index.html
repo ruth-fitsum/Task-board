@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Task Board</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo"> 
+        <h1>SQ10 Task Board</h1>
+        </div>
+        <div class="favHeader">
+            <a href="#favSection" class="favButton">
+                <span class="heart-icon">♡</span>
+                <p>Favorites</p>
+            </a>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="searchBar">
+        <!-- margin and padding  -->
+        <form id="searchForm">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search..."
+        />
+        <button type="submit">Search</button>
+        </form>
+    </section>
+      <section class="todoSection">
+        <h2 id="title">Main Data</h2>
+
+        <article id="todoMain" class="grid">
+           <div class="card " id="">
+                <div class="textGroup">
+                    <p class="description">description</p>
+                    <p class="status">status</p>
+                    <p class="userId">userId</p>
+                </div>
+                <button class="addImportant">
+                    <span class="heart-icon">♡</span>
+                </button>
+           </div>
+        </article>
+      </section>
+
+      <section class="favSection" id="favSection">
+        <h2>Important</h2>
+
+        <div id="todoImp" class="grid">
+          <article id="todoMain" class="grid">
+           <div class="card " id="">
+                <div class="textGroup">
+                    <p class="description">description</p>
+                    <p class="status">status</p>
+                    <p class="userId">userId</p>
+                </div>
+                <button class="removeImportant">
+                    <span class="heart-icon">♡</span>
+                </button>
+           </div>
+        </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
